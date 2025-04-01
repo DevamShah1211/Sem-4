@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <p id="p1"></p>
+</body>
+<script>
+    function st() {
+        const settime = new Date().toLocaleTimeString()
+        console.log(settime)
+        document.getElementById("p1").innerHTML=settime
+    }
+    st()
+    setInterval(st, 1000)
+</script>
+</html>

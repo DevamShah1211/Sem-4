@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</meta>
+
+<script>
+    function bday() {
+        const obj = JSON.parse(`{"name":"xyz","age":"19","dob":"2005-11-12"}`);
+
+        console.log(obj.dob);
+
+        a = new Date(obj.dob);
+
+        alert(a);
+    }
+</script>
+</head>
+
+<body>
+    <button onclick="bday()">Click Me</button>
+</body>
+</html>
+
+
+
+

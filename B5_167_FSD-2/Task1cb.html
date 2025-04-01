@@ -1,0 +1,25 @@
+<!-- Write a js code that display ”Hello” with increasing font size in interval of 50ms in blue colour and it should stop when font size reaches to 50px.
+(*Reload page and observe change in size) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        size=15
+        function fun(){
+            document.getElementById("demo").style.color="blue"
+            document.getElementById("demo").innerHTML="Hello"
+            document.getElementById("demo").style.fontSize=size+"px"
+            if(size<=50){
+                size++
+            }
+        }
+        setInterval(fun,500)
+    </script>
+</body>
+</html>

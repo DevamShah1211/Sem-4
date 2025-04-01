@@ -1,0 +1,8 @@
+{
+    "name": "abc",
+    "age": 19,
+    "course":["FSD","DE","PS"],
+    "adress":["T1","t2",{"t3":"Give Again"}],
+    "active":true,
+    "id":null
+}

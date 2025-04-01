@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="p"></p>
+    <script>
+        function fun(){
+            document.getElementById("demo").innerHTML="Welcome To CallBack World"
+        }
+        setTimeout(fun,3000)
+        function add(a,b){
+            obj=document.getElementById("p")
+            obj.innerHTML=(a+b)
+        }
+        count=2;
+        maxCount=5;
+        i=setInterval(
+            function(){
+                add(++count,++maxCount)
+            },1000
+        )
+        count++
+        if(count>=maxCount){
+            clearInterval(i)
+            document.write("Reached Max Limit")
+        }    
+    </script>
+</body>
+</html>
