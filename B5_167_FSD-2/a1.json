@@ -1,8 +1,0 @@
-{
-    "name": "abc",
-    "age": 19,
-    "detail":{"class":"B5","RollNo":167},
-    "hobby":["Movie","Singing","Tv"],
-    "active":true,
-    "id":null
-}
