@@ -1,0 +1,13 @@
+/* h1{
+    color: blue;
+    font-size: 50px;
+}
+p{
+    color:cyan;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+} */
+.submit{
+    background-color: black;
+    color: white;
+}
