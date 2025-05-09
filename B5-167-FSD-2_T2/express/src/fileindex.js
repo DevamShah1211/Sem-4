@@ -1,0 +1,5 @@
+const express=require('express')
+const app=express()
+const m = require('./filedata')
+app.use('/',m)
+app.listen(5678)
