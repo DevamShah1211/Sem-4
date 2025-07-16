@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <h1>Student Details</h1>
+    <h2>Hello my name is {{name}} and my age is {{age}} and my marks are:
+    {% for i in marks %}
+        <li>{{i}}</li>
+    {% endfor %}
+
+    {% for i in sname %}
+        <li>{{i}}</li>
+    {% endfor %}
+    </h2>
+    <h2>Age Criteria</h2>
+    {% if age > 18%}
+        <h3>Adult</h3>
+    {% elif age > 35%}
+        <h3>Young</h3>
+    {% else %}
+        <h3>Old age</h3>
+    {% endif %}
+</body>
+</html>
