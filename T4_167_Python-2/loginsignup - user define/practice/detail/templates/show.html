@@ -1,0 +1,62 @@
+{% include "base.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table Example</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 8px 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get">
+        <input type="text" name="q">
+        <button type="submit">Search</button>
+    </form>
+
+    <table>
+        <caption>Sample Table</caption>
+        <thead>
+            <tr>
+
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in stud %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.age}}</td>
+
+                {% comment %} <td> <a href="{% url "edit" i.id %}">edit</a></td> {% endcomment %}
+                <td> <a href="{% url "delete" i.id %}">delete</a></td>
+                <td> <a href="{% url "details" i.id %}">details</a></td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+</body>
+{% endblock %}
